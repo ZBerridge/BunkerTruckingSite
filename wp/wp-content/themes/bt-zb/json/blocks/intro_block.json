@@ -1,0 +1,10 @@
+{
+    "name": "Introduction",
+    "title": "Intro Section",
+    "description": "A simple block that displays text on the left, and an image on the right.",
+    "render_callback": "acf_block_render_callback",
+    "render_template": "block-templates/content/intro-section.php",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["intro", "section", "text", "images"]
+}

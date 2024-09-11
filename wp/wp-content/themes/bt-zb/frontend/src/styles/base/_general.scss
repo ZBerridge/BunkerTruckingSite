@@ -1,0 +1,50 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  .bg-navy {
+      background-color: $navy-blue;
+  }
+  .btn-link {
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      &:hover {
+          color: $white;
+      }
+      a {
+          text-transform: uppercase;
+          font-size: 1.5rem;
+          cursor: pointer;
+      }
+  }
+  a.underline {
+      color: inherit !important;
+      text-decoration: none;
+      position: relative;
+      text-transform: uppercase;
+    }
+    a.underline:before {
+      color: inherit !important;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: $cubic-transition;
+      transition: $cubic-transition;
+    }
+    a.underline.always-und:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+    a.underline:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }

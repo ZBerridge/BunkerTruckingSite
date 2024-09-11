@@ -1,0 +1,10 @@
+{
+    "name": "service-areas",
+    "title": "Service Areas",
+    "description": "A custom block to render the service area in an animated SVG.",
+    "render_callback": "acf_block_render_callback",
+    "render_template": "block-templates/content/service-area.php",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["servce", "area", "svg"]
+}

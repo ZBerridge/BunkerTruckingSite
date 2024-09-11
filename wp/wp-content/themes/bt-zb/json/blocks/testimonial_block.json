@@ -1,0 +1,10 @@
+{
+    "name": "testimonials",
+    "title": "Testimonial Carousel",
+    "description": "A custom block to render testimonials in a carousel.",
+    "render_callback": "acf_block_render_callback",
+    "render_template": "block-templates/carousels/testimonials.php",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["testimonials", "carousel", "text"]
+}

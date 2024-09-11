@@ -1,0 +1,9 @@
+name: bunker-trucking
+recipe: wordpress
+config:
+  webroot: ./wp
+services:
+  appserver:
+    type: php
+    install_dependencies_as_root:
+      - a2enmod headers

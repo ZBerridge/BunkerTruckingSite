@@ -1,0 +1,10 @@
+{
+    "name": "contact-form",
+    "title": "Contact Form",
+    "description": "A custom block to render shortcodes, i.e., the contact form.",
+    "render_callback": "acf_block_render_callback",
+    "render_template": "block-templates/content/contact-form.php",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["contact", "form", "shortcode"]
+}

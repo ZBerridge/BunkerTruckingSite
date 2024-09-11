@@ -1,0 +1,92 @@
+#testimonials {
+    padding: 2rem 0;
+    .title {
+        color: $violet;
+        h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            @include media-breakpoint-down(md) {
+                font-size: 2rem;
+            }
+        }
+    }
+    .testimonial-carousel {
+        .testimonial {
+            .content {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                min-height: 10rem;
+                padding: 3rem 2.5rem 0 2.5rem;
+            }
+            .content p {
+                padding: 0 2.5rem;
+                font-size: 1.25rem;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    content: '\f10d';
+                    font-size: 32px;
+                    line-height: 1;
+                    height: 30px;
+                    font-family: "Font Awesome 6 Free";
+                    opacity: 0.5;
+                }
+            }
+            .name {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 0 2.5rem 3rem 2.5rem;
+                span {
+                    font-size: 1.75rem;
+                    color: $navy-blue;
+                    @include media-breakpoint-down(md) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
+        .slick-prev, .slick-next {
+            top: 48%;
+            position: absolute;
+            z-index: 1000;
+            color: $navy-blue;
+            height: 2rem;
+            &:before {
+              font-family: 'Font Awesome 6 Free', serif;
+              color: $navy-blue;
+              font-size: 2rem;
+            }
+          }
+          .slick-prev {
+            left: 25px;
+            &:before {
+              content: "\f053";
+            }
+          }
+          .slick-next {
+            right: 25px;
+            &:before {
+              content: "\f054";
+            }
+          }
+          @include media-breakpoint-down(sm) {
+            .slick-prev {
+                left: 15px;
+            }
+            .slick-next {
+                right: 15px;
+            }
+          }
+    }
+}
+

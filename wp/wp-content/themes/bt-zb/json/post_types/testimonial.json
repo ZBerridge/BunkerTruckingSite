@@ -1,0 +1,23 @@
+{
+    "post_type": "testimonial",
+    "args": {
+      "labels": {
+        "name": "Testimonial",
+        "singular_name": "Testimonial",
+        "add_new_item": "Add New Testimonial",
+        "new_item": "New Testimonial",
+        "edit_item": "Edit Testimonial"
+      },
+      "rewrite": {
+        "slug": "testimonial"
+      },
+      "menu_position": 5,
+      "menu_icon": "dashicons-format-status",
+      "supports": ["title", "thumbnail"],
+      "taxonomies": ["featured"],
+      "show_in_rest": true,
+      "public": false,
+      "has_archive": false,
+      "show_ui": true
+    }
+  }

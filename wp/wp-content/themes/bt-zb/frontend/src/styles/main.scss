@@ -1,0 +1,27 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./bootstrap/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+/** Import FontAwesome **/
+$fa-font-path: "../../../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+/** Base Styles **/
+@import "./base/fonts";
+@import "./base/general";
+
+/** Component Styles **/
+@import "./components/testimonials";
+@import "./components/navbar";
+@import "./components/banner";
+@import "./components/carousel";
+@import "./components/intro";
+@import "./components/service_area";
+@import "./components/specialties";
+@import "./components/footer_author";
+@import "./components/footer";
+@import "./components/form";

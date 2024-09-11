@@ -1,0 +1,29 @@
+#service_areas {
+    background-color: $light-blue;
+    padding: 3rem 0;
+    .title {
+        color: $navy-blue;
+        display: flex;
+        justify-content: center;
+        h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            @include media-breakpoint-down(md) {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+svg#service_areas_svg {
+    path.service_town {
+        fill: $navy-blue;
+        opacity: 0;
+    }
+    text.service_text tspan {
+        text-transform: uppercase;
+        fill: $orange;
+        font-weight: 700 !important;
+        opacity: 0;
+    }
+}

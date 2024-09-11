@@ -1,0 +1,93 @@
+#specialties {
+    padding: 3rem 0rem;
+    .title {
+        color: $navy-blue;
+        display: flex;
+        justify-content: center;
+        h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            @include media-breakpoint-down(md) {
+                font-size: 2rem;
+            }
+        }
+    }
+    .card {
+        padding: 1rem;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        .card-outer {
+            .card-content {
+                position: relative;
+                overflow: hidden;
+                min-height: 32rem;
+                background-position: center;
+                background-size: cover;
+                @include media-breakpoint-down(lg) {
+                    min-height: 28rem;
+                }
+                @include media-breakpoint-down(md) {
+                    min-height: 24rem;
+                }
+                @include media-breakpoint-down(sm) {
+                    min-height: 20rem;
+                }
+                border-radius: 10px;
+                padding: 2rem;
+                transition: all .25s;
+                z-index: 1;
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+                &:hover {
+                    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+                    filter: brightness(60%);
+                    &~.card-content-inner {
+                        .card-title h3 {
+                            opacity: 0;
+                        }
+                        .card-text {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .card-content-inner {
+                width: 100%;
+                padding-right: 2rem;
+                padding-top: 2rem;
+                pointer-events: none;
+                z-index: 9999;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                top: 2rem;
+                text-align: center;
+                transition: all .5s;
+                transition-timing-function: ease-in-out;
+                color: $white;
+            }
+            .card-title h3 {
+                font-size: 2.25rem;
+                opacity: 1;
+                @include media-breakpoint-down(sm) {
+                    font-size: 1.75rem;
+                }
+            }
+            .card-text {
+                transition: all .5s;
+                position: absolute;
+                transition-timing-function: ease-in-out;
+                padding-right: 3rem;
+                padding-left: 1rem;
+                opacity: 0;
+                top: 2rem;
+                font-size: 1.5rem;
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

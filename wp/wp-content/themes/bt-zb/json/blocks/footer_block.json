@@ -1,0 +1,10 @@
+{
+    "name": "footer",
+    "title": "Footer",
+    "description": "A custom block to render 3 columns of footer/contact info.",
+    "render_callback": "acf_block_render_callback",
+    "render_template": "block-templates/content/footer.php",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["footer", "contact", "text", "icon"]
+}

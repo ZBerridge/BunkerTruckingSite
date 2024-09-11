@@ -1,0 +1,10 @@
+{
+    "name": "specialty-cards",
+    "title": "Specialty Cards",
+    "description": "A custom block to render the 'specialty' post type in a card layout with a hover effect.",
+    "render_callback": "acf_block_render_callback",
+    "render_template": "block-templates/content/specialties.php",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["banner", "specialties", "specialty", "images", "card"]
+}

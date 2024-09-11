@@ -1,0 +1,119 @@
+#banner {
+    .banner-carousel {
+        margin-bottom: 0px;
+        .slick-prev, .slick-next {
+            top: 48%;
+            position: absolute;
+            z-index: 1000;
+            color: $white;
+            height: 2rem;
+            &:before {
+              font-family: 'Font Awesome 6 Free', serif;
+              color: $white;
+              font-size: 2rem;
+            }
+          }
+          .slick-prev {
+            left: 25px;
+            &:before {
+              content: "\f053";
+            }
+          }
+          .slick-next {
+            right: 25px;
+            &:before {
+              content: "\f054";
+            }
+          }
+          @include media-breakpoint-down(sm) {
+            .slick-prev {
+                left: 15px;
+            }
+            .slick-next {
+                right: 15px;
+            }
+          }
+        width: 100%;
+        .banner-img-outer {
+            height: 70vh;
+            width: 100%;
+            .banner-img {
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 1;
+                    content: '';
+                    background-color: rgba(255, 255, 255, .25);
+                }
+            }
+        }
+        .slick-dots {
+            bottom: 10px;
+            color: $white;
+        }
+        .slick-dots li button:before {
+            font-size: 2rem;
+        }
+    }
+    .banner-info {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        top: 50%;
+        bottom: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        color: $white;
+        a {
+            z-index: 999;
+        }
+        a.underline {
+            color: $white;
+            &::before {
+                background-color: $white;
+            }
+        }
+        h1, h2, h3 {
+            margin-bottom: 1rem;
+            text-shadow: 0px 0px 1.5rem $violet;
+        }
+        h1, h2, h3, a {
+            color: $white;
+        }
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        h2, h3, a.btn-link {
+            font-size: 2.5rem;
+        }
+        @include media-breakpoint-down(md) {
+            h1 {
+                font-size: 3rem;
+            }
+            h2, h3, a.btn-link {
+                font-size: 2rem;
+            } 
+        }
+        @include media-breakpoint-down(sm) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2, h3, a.btn-link {
+                font-size: 1.5rem;
+            } 
+        }
+    }
+}

@@ -1,0 +1,64 @@
+#carousel {
+    .slider-nav {
+        .slick-slide {
+            padding-left: .5rem;
+            padding-right: .5rem;
+          }
+          img {
+            border-radius: 50%;
+            border: 5px solid $light-blue;
+          }
+          .slick-arrow {
+            position: absolute;
+            text-indent: 0;
+            font-size: 46px;
+            text-decoration: none;
+            height: 50px;
+            line-height: 50px;
+            margin-top: -30px;
+            color: inherit;
+            font-weight: normal;
+            top: 50%;
+            cursor: pointer;
+            &.fa-angle-left {
+              background: none;
+              left: -40px;
+            }
+            &.fa-angle-right {
+              background: none;
+              right: -40px;
+            }
+          }
+          @include media-breakpoint-down(md){
+            .slick-arrow {
+              &.fa-angle-left {
+                left: 10px;
+              }
+              &.fa-angle-right {
+                right: 10px;
+              }
+            }
+        }
+    }
+    @include media-breakpoint-down(md){
+        .slider-nav {
+          padding: 0 50px;
+          img {
+            border: 2px solid $light-blue;
+          }
+        }
+      }
+      .slider-content {
+        .image {
+          img{
+            border-radius: 50%;
+            border: 2px solid $light-blue;
+          }
+        }
+      }
+      .slick-current {
+        img, .image > img{
+          border: 2px solid $blue;
+        }
+      }
+}

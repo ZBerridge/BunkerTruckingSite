@@ -1,0 +1,23 @@
+{
+    "post_type": "specialty",
+    "args": {
+      "labels": {
+        "name": "Specialties",
+        "singular_name": "Specialty",
+        "add_new_item": "Add New Specialty",
+        "new_item": "New Specialty",
+        "edit_item": "Edit Specialty"
+      },
+      "rewrite": {
+        "slug": "specialty"
+      },
+      "menu_position": 5,
+      "menu_icon": "dashicons-format-status",
+      "supports": ["title", "thumbnail"],
+      "taxonomies": ["featured"],
+      "show_in_rest": true,
+      "public": false,
+      "has_archive": false,
+      "show_ui": true
+    }
+  }
